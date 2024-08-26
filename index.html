@@ -1,1 +1,77 @@
-<h1> teste 2</h1>
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="styles.css">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário pré consulta</title>
+  <meta name="descrição" content="formulário para os pacientes preencherem antes da consulta">
+  <meta name="autor" content="Gabriel Quintanilha">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="refresh" content="2">
+  </head>
+  
+<Body>
+    <header>
+    <img src="D:\Faculdade\HTML\projeto formulario\20200608_1021360.26544062096712395.png">
+    <h1 id="title">Formulário pré consulta</h1>
+    </header>
+    
+  <form id="survey-form">
+    <fieldset>
+    <label for="name">Nome completo: <input id="name" type="text" placeholder="Coloque seu nome" required></label>
+    </fieldset>
+
+    <fieldset> 
+    <label for="email">Telefone celular: <input id="celular" type="number" placeholder="(XX)XXXXXXXXX" required></label>
+    </fieldset>
+    
+    <fieldset> 
+    <label for="data_nascimento" required>Data de nascimento: <input id= "data_nascimento" type="date" placeholder="dd/mm/aaaa"></label>
+    </fieldset>
+    
+    <fieldset>
+    <label for="sexo">Sexo </label>
+    <select id="dropdown"> 
+    <option id="feminino">Feminino</option>
+    <option id="masculino">Masculino</option>
+    </select>
+    </fieldset>
+    
+    <fieldset>
+    <label for="peso" class="block" >Qual seu peso? <input id="peso" type="number" class="caixa_medida"></label>
+    <label for="altura" class="block" >Qual sua altura? (em centímetros) <input id="altura" type="number" class="caixa_medida"></label>
+    </fieldset>
+   
+    <fieldset>
+    <label for="local" class="block">Onde será seu atendimento? </label>
+    <label class="block"><input type="radio" checked name="local">Copacabana</label>
+    <label class="block"><input type="radio" name="local">Penha</label>
+    <label class="block"><input type="radio" name="local">Online</label>
+    </fieldset>
+    
+    
+    <fieldset>  
+    <label for="objetivo" class="block" >Qual seu objetivo?</label> 
+    <label for="alimentação" class="block" ><input id="alimentação" type="checkbox" />Melhora da alimentação</label>
+    <label for="saúde" class="block" ><input id="saúde" type="checkbox" />Melhora da Saúde</label>
+    <label for="performance" class="block" ><input id="performance" type="checkbox" />Melhora da performance</label>
+    <label for="gordura" class="block" ><input id="gordura" type="checkbox" />Perda de gordura corporal</label>
+    <label for= "massa" class="block" ><input id="massa" type="checkbox" />Ganho de massa muscular</label>
+    <label for="outro" class="block" ><input id="outro" type="checkbox" />Outro</label>
+    </fieldset>
+    
+   
+    <fieldset>
+    <div class="rotina">
+    <label for="rotina-alimentar">Como é a sua alimentação no dia a dia?</label>
+    <textarea id="rotina-alimentar" name="rotina-alimentar" rows="1" cols="70" placeholder="(Horário) (Nome da refeição): Alimento 1, Alimento 2, Alimento 3 etc..."></textarea>
+    </div>
+    </fieldset>
+
+    <input type="submit" value="Enviar" class="enviar"/>
+    </form>
+</body>
+
+<footer>
+</footer>
+</html>
